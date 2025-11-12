@@ -14,6 +14,7 @@
         <ul>
             <li><a href="./Practice/Basic/PHP_Basic.php">PHP Basic</a></li>
             <li><a href="./Practice/Basic/MY_SQL.php">Connect MySQL</a></li>
+            <li><a href="./Practice/Project1_manager_courses/index.php">Project 1</a></li>
         </ul>
     </nav>
 
