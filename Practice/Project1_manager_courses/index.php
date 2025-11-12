@@ -5,7 +5,13 @@ ob_start(); // tránh th bị lỗi dùng hàm header, cookie
 
 
 require_once "./config.php";
+require_once "./includes/connect.php";
+require_once "./includes/database.php";
 
+$rel = getALL("SELECT * FROM courses");
+echo '<pre>';
+print_r($rel);
+echo '</pre>';
 
 $module = _MODULES;
 $action = _ACTION;
