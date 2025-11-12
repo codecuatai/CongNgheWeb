@@ -7,13 +7,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Chào mừng đến với trang PHP của me!</h1>
+    <h1>大家好你们！</h1>
 
     <nav>
-        <h2>Tự luyện nè</h2>
+        <h2>这是我的练词</h2>
         <ul>
-            <li><a href="./Practice/PHP_Basic.php">PHP Cơ bản</a></li>
-            <li><a href="./Practice/MY_SQL.php">Connect MySQL</a></li>
+            <li><a href="./Practice/Basic/PHP_Basic.php">PHP Basic</a></li>
+            <li><a href="./Practice/Basic/MY_SQL.php">Connect MySQL</a></li>
         </ul>
     </nav>
 
