@@ -13,8 +13,10 @@
         <h2>Tự luyện nè</h2>
         <ul>
             <li><a href="./Practice/PHP_Basic.php">PHP Cơ bản</a></li>
+            <li><a href="./Practice/MY_SQL.php">Connect MySQL</a></li>
         </ul>
     </nav>
 
 </body>
 </html>
+
