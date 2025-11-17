@@ -10,6 +10,15 @@
     <h1>大家好你们！</h1>
 
     <nav>
+        <h2>Bài tập phiếu bài tập</h2>
+        <ul>
+            <li><a href="./CodeBTVN/Chuong2/sinhvien.php">Code chương 2</a></li>
+        </ul>
+    </nav>
+
+    <br><br><hr><br><br>
+
+    <nav>
         <h2>这是我的练词</h2>
         <ul>
             <li><a href="./Practice/Basic/PHP_Basic.php">PHP Basic</a></li>
