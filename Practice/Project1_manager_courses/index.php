@@ -8,10 +8,20 @@ require_once "./config.php";
 require_once "./includes/connect.php";
 require_once "./includes/database.php";
 
-$rel = getALL("SELECT * FROM courses");
+$rel = getOne("SELECT * FROM courses");
 echo '<pre>';
 print_r($rel);
 echo '</pre>';
+
+$data = [
+    'name' => 'Tài',
+    'slug' => 'Tao tên tàidsdsds',
+];
+
+$condition = 'id = 3';
+
+$rel = lastID();
+echo $rel;
 
 $module = _MODULES;
 $action = _ACTION;
@@ -34,6 +44,8 @@ if(!empty($path)){
 }else{
     require_once "./modules/errors/500.php";
 }
+
+
 
 
 
