@@ -21,10 +21,9 @@
     <nav>
         <h2>这是我的练词</h2>
         <ul>
-            <li><a href="./Practice/Basic/PHP_Basic.php">PHP Basic</a></li>
+            <li><a href="./Practice/PHP_Basic.php">PHP Basic</a></li>
             <li><a href="./Practice/Bai1.php">Bài 1</a></li>
-            <li><a href="./Practice/Basic/MY_SQL.php">Connect MySQL</a></li>
-            <li><a href="./Practice/Project1_manager_courses/index.php">Project 1</a></li>
+            <li><a href="./Practice/MY_SQL.php">Connect MySQL</a></li>
         </ul>
     </nav>
 
