@@ -77,3 +77,11 @@ echo $student1->name;
 </html>
 
 
+<?php
+    session_start();
+    if(isset($_SESSION['name'])){
+        echo "you saved session";
+    }else{
+        echo "mày vẫn chưa lưu session";
+    }
+?>

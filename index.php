@@ -12,7 +12,7 @@
     <nav>
         <h2>Bài tập phiếu bài tập</h2>
         <ul>
-            <li><a href="./CodeBTVN/Chuong1-2/chapter2.php">Code chương 2</a></li>
+            <li><a href="./Code_PHT/Chuong1-2/chapter2.php">Code chương 2</a></li>
         </ul>
     </nav>
 
