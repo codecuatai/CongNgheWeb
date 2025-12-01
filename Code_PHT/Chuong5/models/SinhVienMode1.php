@@ -5,7 +5,6 @@
 // Hàm này nhận 1 tham số là $pdo (đối tượng PDO) 
 // Bên trong hàm, thực thi câu lệnh SELECT * FROM sinhvien 
 // Hàm trả về kết quả (dùng fetchAll) 
-
 function getAllSinhVien($pdo)
 {
     // $sql = "SELECT * FROM sinhvien"; 
@@ -15,7 +14,6 @@ function getAllSinhVien($pdo)
     $stmt = $pdo->query(@$sql);
     return $stmt->fetchAll(PDO::FETCH_ASSOC);
 }
-
 
 function addSinhVien($pdo, $ten, $email)
 {

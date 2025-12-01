@@ -1,10 +1,7 @@
 <?php
 // Tệp Controller là "não" của ứng dụng 
-require_once './models/SinhVienMode1.php';
-
 // TODO 6: (Quan trọng) Import (require_once) tệp Model vào 
-// Gợi ý: require_once 'models/SinhVienModel.php'; 
-
+require_once './models/SinhVienMode1.php';
 
 // === THIẾT LẬP KẾT NỐI PDO === 
 // TODO 7: Copy code PDO từ PHT Chương 4 vào đây 
@@ -25,32 +22,22 @@ try {
 // === LOGIC CỦA CONTROLLER === 
 
 // TODO 8: Kiểm tra xem có hành động POST (thêm sinh viên) không 
-// Gợi ý: Dùng isset($_POST['ten_sinh_vien']) 
 if (isset($_POST['ten_sinh_vien'])) {
-
     // TODO 9: Nếu có, lấy $ten và $email từ $_POST 
     $ten = $_POST['ten_sinh_vien'];
     $email = $_POST['email'];
 
     // TODO 10: Gọi hàm addSinhVien() từ Model 
-    // (Truyền $pdo, $ten, $email vào hàm) 
-    // Gợi ý: addSinhVien($pdo, $ten, $email);
     addSinhVien($pdo, $ten, $email);
 
     // TODO 11: Chuyển hướng về index.php để "làm mới" trang 
-    // Gợi ý: header('Location: index.php'); 
     header('Location: index.php');
     exit;
 }
 
 // TODO 12: (Luôn luôn) Gọi hàm getAllSinhVien() từ Model 
-// (Truyền $pdo vào hàm) 
-// Lưu kết quả trả về vào một biến, ví dụ: $danh_sach_sv 
-// Gợi ý: $danh_sach_sv = getAllSinhVien($pdo); 
 $danh_sach_sv = getAllSinhVien($pdo);
 
 
-// TODO 13: (Rất quan trọng) Import (include) tệp View ở cuối cùng 
-// Tệp View sẽ tự động "nhìn thấy" biến $danh_sach_sv mà ta vừa tạo 
-// Gợi ý: include 'views/sinhvien_view.php'; 
+// TODO 13: (Rất quan trọng) Import (include) tệp View ở cuối cùng  
 require_once 'views/SinhVien_view.php';

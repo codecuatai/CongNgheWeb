@@ -43,11 +43,7 @@
         </tr>
         <?php
         // TODO 4: Dùng vòng lặp foreach để duyệt qua biến $danh_sach_sv 
-        // (Biến $danh_sach_sv này sẽ được Controller truyền sang) 
-        // Gợi ý: foreach ($danh_sach_sv as $sv) { ... } 
-
         // TODO 5: In (echo) các dòng <tr> và <td> chứa dữ liệu $sv 
-        // Gợi ý: echo "<tr><td>" . htmlspecialchars($sv['id']) . 
         foreach ($danh_sach_sv as $sv):
         ?>
             <tr>
@@ -58,9 +54,7 @@
             </tr>
         <?php
         endforeach;
-
         // Đóng vòng lặp 
-
         ?>
     </table>
 </body>
