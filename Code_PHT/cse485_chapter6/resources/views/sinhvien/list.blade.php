@@ -26,9 +26,9 @@
         </tr>
     </thead>
     <tbody>
-        @foreach($danhSachSV as $v=>$sv)
+        @foreach($danhSachSV as $i=>$sv)
         <tr>
-            <td>{{ $v + 1 }}</td>
+            <td>{{ $i + 1 }}</td>
             <td>{{ $sv['ten_sinh_vien'] }}</td>
             <td>{{ $sv['email'] }}</td>
         </tr>
