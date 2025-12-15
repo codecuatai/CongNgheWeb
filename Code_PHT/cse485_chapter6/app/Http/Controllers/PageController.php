@@ -6,9 +6,28 @@ use Illuminate\Http\Request;
 
 class PageController extends Controller
 {
-    // TODO 8: Thêm phffơng thức này 
+    // Sửa phffơng thức showHomepage() của Chffơng 6
     public function showHomepage()
     {
-        return "Chào mừng bạn đến với PHT Chhương 6 - Laravel!";
+        // TODO 7: Thay vì "return 'Chào mừng...'", chúng ta sẽ chuẩn bị dữ liệu để truyền cho View
+        $viewTitle = 'PHT Chương 7 - Blade Template';
+        $pageTitle = 'Chào mừng bạn đến với Blade!';
+        $pageDescription = 'Đây là trang chủ được render bằng Blade Template Engine.';
+        $tasks = [
+            'Cài đặt Laravel',
+            'Hiểu về Routing & Controller',
+            'Tạo Layout với Blade',
+            'Truyền dữ liệu cho View'
+        ];
+        // TODO 8: Trả về một View
+        return view('homepage', [
+            'title' => $viewTitle,
+            'page_title' => $pageTitle,
+            'page_description' => $pageDescription,
+            'tasks' => $tasks
+        ]);
+        // TODO 9: (Cách khác) Dùng hàm compact() cho gọn
+        // return view('homepage', compact('viewTitle', 'pageTitle', 'pageDescription', 'tasks'));
+        // (Lffu ý: khi dùng compact, tên biến ở Controller và View phải khớp nhau)
     }
 }
